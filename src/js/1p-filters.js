@@ -170,6 +170,12 @@ var revertChanges = function() {
     uDom.nodeFromId('userFilters').value = cachedUserFilters + '\n';
     userFiltersChanged();
 };
+    //Tariq:
+var toClose = windoes.onbeforeunload = function(){
+		var message = "Do you want to leave the page?, without saving Filters";
+		return message;
+};
+
 
 /******************************************************************************/
 
