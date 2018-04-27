@@ -172,8 +172,7 @@ var revertChanges = function() {
 };
     //Tariq:
 var toClose = windoes.onbeforeunload = function(){
-		var message = "Do you want to leave the page?, without saving Filters";
-		return message;
+	return "Do you want to leave the page"; 
 };
 
 
