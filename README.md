@@ -180,6 +180,7 @@ all for free.
 
 You can contribute by helping translate uBlock₀ [on Crowdin](https://crowdin.net/project/ublock).
 
+
 ## License
 
 [GPLv3](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt).

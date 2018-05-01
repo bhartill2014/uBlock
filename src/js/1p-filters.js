@@ -171,8 +171,10 @@ var revertChanges = function() {
     userFiltersChanged();
 };
     //Tariq:
+
 var toClose = window.onbeforeunload = function(){
 	return "Do you want to leave the page"; 
+
 };
 
 

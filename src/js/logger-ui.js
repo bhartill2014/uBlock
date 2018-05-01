@@ -771,13 +771,14 @@ var netFilteringManager = (function() {
         staticFilterNode().value = filter;
         updateWidgets();
     };
-
+	
+	//Issue #3348 fix
     var updateWidgets = function() {
         var value = staticFilterNode().value;
-        dialog.querySelector('#createStaticFilter').classList.toggle(
+        /*dialog.querySelector('#createStaticFilter').classList.toggle(
             'disabled',
             createdStaticFilters.hasOwnProperty(value) || value === ''
-        );
+        );*/
     };
 
     var onClick = function(ev) {
@@ -808,12 +809,13 @@ var netFilteringManager = (function() {
         }
 
         // Create static filter
+		//Issue #3348 fix
         if ( target.id === 'createStaticFilter' ) {
             value = staticFilterNode().value;
-            // Avoid duplicates
-            if ( createdStaticFilters.hasOwnProperty(value) ) {
+            // Avoids duplicates
+            /*if ( createdStaticFilters.hasOwnProperty(value) ) {
                 return;
-            }
+            }*/
             createdStaticFilters[value] = true;
             if ( value !== '' ) {
                 var d = new Date();
